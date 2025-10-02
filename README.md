@@ -33,7 +33,7 @@ npm run dev
 By default, the server runs on port **3000**:
 
 ```
-http://localhost:3000/currency
+http://localhost:3000/
 ```
 
 ---
