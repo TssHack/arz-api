@@ -1,7 +1,8 @@
 {
   "name": "currency-scraper-api",
   "version": "1.0.0",
-  "description": "یک API حرفه‌ای برای دریافت قیمت لحظه‌ای ارزها از tgju.org با استفاده از Node.js، Express، Axios و Cheerio.",
+  "description": "A professional API to fetch real-time currency prices from tgju.org using Node.js, Express, Axios, and Cheerio.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -16,16 +17,17 @@
     "api",
     "tgju",
     "exchange",
-    "fx"
+    "fx",
+    "nodejs"
   ],
   "author": "Ehsan Fazli <@devehsan>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.7.4",
-    "cheerio": "^1.0.0",
-    "express": "^4.19.2"
+    "axios": "1.6.7",
+    "cheerio": "1.0.0",
+    "express": "4.19.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "3.1.0"
   }
 }
