@@ -1,9 +1,12 @@
 import express from "express";
+import cors from "cors";
 import axios from "axios";
 import * as cheerio from "cheerio";
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors()); // 🔹 فعال کردن CORS
 
 function convertToFlag(text) {
   const a = "a".charCodeAt(0);
