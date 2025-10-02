@@ -48,7 +48,7 @@ async function getCurrencies() {
   return data;
 }
 
-app.get("/currency", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const result = await getCurrencies();
     res.json({
