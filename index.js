@@ -67,6 +67,26 @@ app.get("/", async (req, res) => {
   }
 });
 
+app.get("/gold", async (req, res) => {
+  try {
+    const response = await axios.get(
+      "https://milli.gold/api/v1/public/milli-price/external",
+      {
+        headers: {
+          Accept: "application/json",
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        },
+        timeout: 15000,
+      }
+    );
+
+    res.json(response.data); 
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
